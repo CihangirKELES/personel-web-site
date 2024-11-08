@@ -34,7 +34,6 @@
   .dark-mode::after {
     content: '';
     position: absolute;
-    /* width: calc(50vw - 305px); */
     width: calc(50vw - 305px);
     background: #cbf281;
     
