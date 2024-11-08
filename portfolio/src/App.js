@@ -73,7 +73,6 @@ function App() {
       value={{ english, languageHandler, darkModeHandler, theme, myData }}
     >
       <div className="flex flex-col bg-[#F9F9F9] dark:bg-[#252128] box-border items-center w-screen">
-        {/* <div className=" flex flex-col items-center bg-[linear-gradient(90deg,_#4832d3_71%,#cbf281_29%)] dark:bg-[linear-gradient(90deg,_#171043_70%,#1A210B_30%)] h-[42rem] "> */}
         <div className=" flex flex-col items-center bg-[#3730A3] dark:bg-[#171043] ">
           <section className="w-[960px]  items-center">
             <Header></Header>
