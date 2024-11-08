@@ -37,6 +37,7 @@ const Hero = () => {
             <a
               href="https://github.com/cihangirkeles"
               target="_blank"
+              rel="noopener noreferrer"
               className="py-3 px-3 flex items-center gap-x-[10px] bg-white hover:bg-[#CBF281] text-[#3730A3] dark:bg-[#252128] dark:hover:bg-[#CBF281] dark:hover:text-[#3730A3] dark:text-[#FFFFFF] rounded-md cursor-pointer hover:text-[#0a0558]"
             >
               <SiGithub size={30} className="w-[2rem]" />
@@ -45,6 +46,7 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/in/cihangirkeless"
               target="_blank"
+              rel="noopener noreferrer"
               className="py-3 px-3 flex items-center gap-x-[10px] bg-white hover:bg-[#CBF281] text-[#3730A3] dark:bg-[#252128] dark:hover:bg-[#CBF281] dark:hover:text-[#3730A3] dark:text-[#FFFFFF] rounded-md cursor-pointer hover:text-[#0a0558]"
             >
               <FaLinkedinIn size={30} className="w-[2rem]" />

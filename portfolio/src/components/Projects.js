@@ -35,6 +35,7 @@ const Projects = () => {
             <a
               href={e.website}
               target="_blank"
+              rel="noopener noreferrer"
               className="text-[16px] text-[#120B39] dark:text-[#CBF281] font-medium underline hover:text-[#17086e] hover:ease-in-out hover:font-bold"
             >
               {english ? 'View Site' : 'Siteye git'}
@@ -42,6 +43,7 @@ const Projects = () => {
             <a
               href={e.git}
               target="_blank"
+              rel="noopener noreferrer"
               className="text-[16px] text-[#120B39] dark:text-[#CBF281] font-medium underline hover:text-[#17086e] hover:ease-in-out hover:font-bold"
             >
               GitHub

@@ -26,14 +26,14 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex gap-x-6 text-[#4731D3] dark:text-[#8F88FF] ">
-        <a href="https://twitter.com/" target="_blank">
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
           <FiTwitter
             className="cursor-pointer dark:hover:text-lime-400 hover:text-[#8F88FF]"
             size={35}
           />
         </a>
 
-        <a href="https://codepen.io/CihangirKELES" target="_blank">
+        <a href="https://codepen.io/CihangirKELES" target="_blank" rel="noopener noreferrer">
           <DiCodepen
             className="cursor-pointer dark:hover:text-lime-400 hover:text-[#8F88FF]"
             size={35}
@@ -46,7 +46,7 @@ const Footer = () => {
           />
         </a>
 
-        <a href="https://instagram.com/" target="_blank">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
           <CgInstagram
             className="cursor-pointer dark:hover:text-lime-400 hover:text-[#8F88FF]"
             size={35}
