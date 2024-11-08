@@ -58,7 +58,7 @@ function App() {
 
     //axios
     axios
-      .post('https://reqres.in/api/orders', data)
+      .post('https://reqres.in/api/workintech', data)
       .then((res) => {
         console.log('axios post>', res.data)
         setMyData(res.data)
