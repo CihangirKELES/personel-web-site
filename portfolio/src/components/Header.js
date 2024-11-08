@@ -26,8 +26,7 @@ const Header = () => {
           )}
         </p>
       </div>
-
-  
+      
       <div className="dark-mode flex items-center ps-4">
         <input
           checked={theme === 'dark'} 
@@ -37,12 +36,16 @@ const Header = () => {
         />
         <label htmlFor="dark-mode__switch"> </label>
 
+       
         <p className="font-inter font-bold text-base leading-4 tracking-wider pl-1 text-[#4731D3] dark:text-[#D9D9D9]">
-          {theme === 'dark' ? (english ? 'DARK MODE' : 'GECE MODU') : (english ? 'DAY MODE' : 'GÜNDÜZ MODU')}
+          {theme === 'dark' 
+            ? (!english ? 'DARK MODE' : 'GECE MODU') 
+            : (!english ? 'DAY MODE' : 'GÜNDÜZ MODU') 
+          }
         </p>
       </div>
     </div>
   );
-}
+};
 
 export default Header;
