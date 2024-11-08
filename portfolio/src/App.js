@@ -38,35 +38,31 @@ function App() {
   }
 
   useEffect(() => {
-    //dark mode local check
+
     if (
       localStorage.mode === 'dark' ||
-      (!('mode' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
+      (!('mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
     }
+  
 
-    //english local check
-    if (localStorage.getItem('english') === 'true') {
-      setEnglish(true)
-    } else {
-      setEnglish(false)
-    }
+    const storedEnglish = localStorage.getItem('english') === 'true';
+    setEnglish(storedEnglish); 
+  
 
-    //axios
     axios
       .post('https://reqres.in/api/workintech', data)
       .then((res) => {
-        console.log('axios post>', res.data)
-        setMyData(res.data)
+        console.log('axios post>', res.data);
+        setMyData(res.data);
       })
       .catch((err) => {
-        console.log('axios err>', err)
-      })
-  }, [])
+        console.log('axios err>', err);
+      });
+  }, [setEnglish]);
 
   return (
     <myContext.Provider
