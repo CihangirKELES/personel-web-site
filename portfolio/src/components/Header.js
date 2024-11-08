@@ -4,6 +4,10 @@ import { myContext } from '../context/myContext';
 const Header = () => {
   const { english, languageHandler, darkModeHandler, theme } = useContext(myContext);
 
+  const handleDarkModeChange = (e) => {
+    darkModeHandler(e.target.checked ? 'dark' : 'light');
+  };
+
   return (
     <div className="items-center justify-end text-xs flex flex-row pt-8">
       <div className="flex justify-end flex-row ps-3 pe-6">
@@ -29,18 +33,17 @@ const Header = () => {
       
       <div className="dark-mode flex items-center ps-4">
         <input
-          checked={theme === 'dark'} 
           type="checkbox"
           id="dark-mode__switch"
-          onClick={darkModeHandler}
+          checked={theme === 'dark'}
+          onChange={handleDarkModeChange} 
         />
         <label htmlFor="dark-mode__switch"> </label>
-
-       
+        
         <p className="font-inter font-bold text-base leading-4 tracking-wider pl-1 text-[#4731D3] dark:text-[#D9D9D9]">
           {theme === 'dark' 
             ? (!english ? 'DARK MODE' : 'GECE MODU') 
-            : (!english ? 'DAY MODE' : 'GÜNDÜZ MODU') 
+            : (!english ? 'DAY MODE' : 'GÜNDÜZ MODU')
           }
         </p>
       </div>
